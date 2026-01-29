@@ -1,0 +1,76 @@
+:root {
+  --bg:#0f172a;
+  --card:#1e293b;
+  --text:#fff;
+  --accent:#38bdf8;
+}
+.light {
+  --bg:#f8fafc;
+  --card:#e2e8f0;
+  --text:#0f172a;
+}
+
+body {
+  margin:0;
+  font-family:Segoe UI;
+  background:var(--bg);
+  color:var(--text);
+  text-align:center;
+}
+
+nav {
+  display:flex;
+  justify-content:space-between;
+  padding:15px 25px;
+  background:var(--card);
+}
+
+.card {
+  background:var(--card);
+  padding:15px;
+  margin:15px auto;
+  width:90%;
+  max-width:320px;
+  border-radius:12px;
+}
+
+input {
+  width:90%;
+  padding:8px;
+  margin:6px;
+}
+
+.board {
+  display:grid;
+  grid-template-columns:repeat(3,90px);
+  gap:12px;
+  justify-content:center;
+  margin:20px auto;
+}
+
+.cell {
+  width:90px;
+  height:90px;
+  background:var(--card);
+  font-size:36px;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+}
+
+.cell:hover {
+  background:var(--accent);
+}
+
+.scoreboard {
+  display:flex;
+  justify-content:center;
+  gap:40px;
+}
+
+.reset {
+  padding:10px 20px;
+  margin-bottom:20px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tic Tac Toe Pro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>🎮 Tic Tac Toe Pro</h2>
+  <button onclick="toggleTheme()">🌙</button>
+</nav>
+
+<div class="card">
+  <input id="playerX" placeholder="Player X Name">
+  <input id="playerO" placeholder="Player O / Computer">
+  <button onclick="startGame()">Start Game</button>
+</div>
+
+<p id="status">Enter names & start</p>
+<p id="timer">⏱️ 10</p>
+
+<div class="modes">
+  <button onclick="setMode('ai')">🤖 VS Computer</button>
+  <button onclick="setMode('multi')">👥 Multiplayer</button>
+</div>
+
+<div class="scoreboard">
+  <div id="xName">X: 0</div>
+  <div id="oName">O: 0</div>
+</div>
+
+<div class="board">
+  <div class="cell" onclick="makeMove(0)"></div>
+  <div class="cell" onclick="makeMove(1)"></div>
+  <div class="cell" onclick="makeMove(2)"></div>
+  <div class="cell" onclick="makeMove(3)"></div>
+  <div class="cell" onclick="makeMove(4)"></div>
+  <div class="cell" onclick="makeMove(5)"></div>
+  <div class="cell" onclick="makeMove(6)"></div>
+  <div class="cell" onclick="makeMove(7)"></div>
+  <div class="cell" onclick="makeMove(8)"></div>
+</div>
+
+<button class="reset" onclick="resetGame()">Restart</button>
+
+<script src="script.js"></script>
+</body>
+</html>
